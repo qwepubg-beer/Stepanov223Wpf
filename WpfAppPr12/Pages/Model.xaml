@@ -5,13 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAppPr12.Pages"
         mc:Ignorable="d"
-        Title="Model" Height="450" Width="800">
+        Title="Model" Height="420" Width="800">
     <Grid>
-        <StackPanel>
-            <RadioButton GroupName="Group1" Content="Электромобиль" IsChecked="True"/>
+        <StackPanel Orientation="Vertical" Margin="84,153,590,184" >
+            <RadioButton GroupName="Group1" Content="Электромобиль" IsChecked="True" />
             <RadioButton GroupName="Group1" Content="Дизель"/>
             <RadioButton GroupName="Group1" Content="Бензин"/>
-            
+
         </StackPanel>
+        <Label Content="Выбирите тип двигателя автомобиля" HorizontalAlignment="Left" Margin="51,122,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.275,0.016"/>
+        <ComboBox x:Name="CarsComboBox"  HorizontalAlignment="Left" Margin="308,157,0,0" VerticalAlignment="Top" Width="161" Height="45"/>
+        <Label Content="Выберите  машину" HorizontalAlignment="Left" Margin="331,122,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.275,0.016"/>
     </Grid>
 </Window>
