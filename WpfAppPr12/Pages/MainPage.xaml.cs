@@ -10,29 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WpfAppPr12
+namespace WpfAppPr12.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для MainPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainPage : Window
     {
-        public MainWindow()
+        public MainPage()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            
-        }
-
-        private void Frame_Navigated(object sender, NavigationEventArgs e)
-        {
-
         }
     }
 }

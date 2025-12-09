@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="Model" Height="450" Width="800">
     <Grid>
-        
+        <StackPanel>
+            <RadioButton GroupName="Group1" Content="Электромобиль" IsChecked="True"/>
+            <RadioButton GroupName="Group1" Content="Дизель"/>
+            <RadioButton GroupName="Group1" Content="Бензин"/>
+            
+        </StackPanel>
     </Grid>
 </Window>
