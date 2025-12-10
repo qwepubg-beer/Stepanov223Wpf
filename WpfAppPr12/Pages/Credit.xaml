@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAppPr12.Pages"
         mc:Ignorable="d"
-        Title="Credit" Height="450" Width="800">
+        Title="Credit" Height="420" Width="800">
     <Grid>
         
     </Grid>

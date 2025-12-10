@@ -5,13 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAppPr12.Pages"
         mc:Ignorable="d"
-        Title="MainPage" Height="450" Width="800">
+        Title="MainPage" Height="420" Width="800">
     <Grid>
-        <Button x:Name="GoBack1" Content="Назад" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="84"/>
-        <Button x:Name="ModelWindow" Content="Модель" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="84" Margin="84,0,0,0"/>
-        <Button x:Name="ColorWindow" Content="Цвет" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="84" Margin="168,0,0,0"/>
-        <Button x:Name="EndWindow" Content="Стоимость" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="84" Margin="252,0,0,0"/>
-        <Button x:Name="CreditWindow" Content="Условия Кредита" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="112" Margin="336,0,0,0"/>
-        <Button x:Name="ZayavkaWindow" Content="Оформить" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="84" Margin="448,0,0,0"/>
+        
     </Grid>
 </Window>

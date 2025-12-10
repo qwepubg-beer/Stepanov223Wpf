@@ -5,8 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAppPr12.Pages"
         mc:Ignorable="d"
-        Title="Color" Height="450" Width="800">
+        Title="Color" Height="420" Width="800">
     <Grid>
-        
+        <ComboBox x:Name="OptionsComboBox"  HorizontalAlignment="Left" Margin="511,157,0,0" VerticalAlignment="Top" Width="161" Height="45"/>
+        <Label Content="Выберите дополнительные опции" HorizontalAlignment="Left" Margin="492,110,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.275,0.016"/>
+        <Label Content="Выберите цвет для автомобиля" HorizontalAlignment="Left" Margin="102,110,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.275,0.016"/>
+        <ComboBox x:Name="ColorComboBox"  HorizontalAlignment="Left" Margin="125,157,0,0" VerticalAlignment="Top" Width="161" Height="45"/>
     </Grid>
 </Window>

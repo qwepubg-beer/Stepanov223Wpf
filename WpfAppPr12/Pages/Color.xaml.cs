@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -11,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using static WpfAppPr12.Options;
 
 namespace WpfAppPr12.Pages
 {
@@ -19,9 +21,22 @@ namespace WpfAppPr12.Pages
     /// </summary>
     public partial class Color : Window
     {
+        static public List<string> Colors = new List<string> {"Чёрный", "Белый", "Синий", "Желтый", "Красный", "Серебристый"};
+        static Options O1 = new Options("Подогрев жопы", 20000);
+        static Options O2 = new Options("Видиорегистратор", 15000);
+        static Options O3 = new Options("Магнитола", 20000);
+        static Options O4 = new Options("Багажник на крышу", 20000);
+
         public Color()
         {
+            
             InitializeComponent();
+            List<Options> options = new List<Options> {O1,O2,O3,O4};
+            OptionsComboBox.ItemsSource = options;
+            OptionsComboBox.DisplayMemberPath = "name";
+            OptionsComboBox.SelectedIndex = 1;
+            ColorComboBox.ItemsSource = Colors;
+            ColorComboBox.SelectedIndex = 1;
         }
     }
 }

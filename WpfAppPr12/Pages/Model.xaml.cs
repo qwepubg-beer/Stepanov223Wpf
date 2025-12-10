@@ -21,10 +21,6 @@ namespace WpfAppPr12.Pages
     /// </summary>
     public partial class Model : Window
     {
-        static List <string> CarModelEl=new List<string> { "Tesla Model Y", "Tesla Model 3", "BYD Song Plus EV" };
-        static List<string> CarModelDz = new List<string> { "Ford F - Series Super Duty","Toyota Hilux","Ram 1500 EcoDiesel" };
-        static List<string> CarModelBz = new List<string> { "Toyota RAV4", "Ford F-Series", "Toyota Corolla" };
-        static List<string> MotorModel = new List<string> { "D","B","E"};
         static Cars car1 = new Cars("Tesla Model Y", 'E', 7375000);
         static Cars car2 = new Cars("Tesla Model 3", 'E', 5717500);
         static Cars car3 = new Cars("Tesla Model 3", 'E', 1810000);

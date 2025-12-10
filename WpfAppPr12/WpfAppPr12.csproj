@@ -94,6 +94,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Options.cs" />
     <Compile Include="Pages\Color.xaml.cs">
       <DependentUpon>Color.xaml</DependentUpon>
     </Compile>
