@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace WpfAppPr12.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для Credit.xaml
+    /// Логика взаимодействия для Result.xaml
     /// </summary>
-    public partial class Credit : Page
+    public partial class Result : Page
     {
-        public Credit()
+        public Result()
         {
             InitializeComponent();
         }

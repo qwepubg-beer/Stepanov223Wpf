@@ -10,16 +10,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace WpfAppPr12.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для MainPage.xaml
+    /// Логика взаимодействия для Main.xaml
     /// </summary>
-    public partial class MainPage : Window
+    public partial class Main : Page
     {
-        public MainPage()
+        public Main()
         {
             InitializeComponent();
         }

@@ -10,6 +10,7 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace WpfAppPr12.Pages
@@ -17,7 +18,7 @@ namespace WpfAppPr12.Pages
     /// <summary>
     /// Логика взаимодействия для End.xaml
     /// </summary>
-    public partial class End : Window
+    public partial class End : Page
     {
         public End()
         {

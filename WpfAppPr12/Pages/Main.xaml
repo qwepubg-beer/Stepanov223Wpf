@@ -1,0 +1,21 @@
+﻿<Page x:Class="WpfAppPr12.Pages.Main"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfAppPr12.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="420" d:DesignWidth="800"
+      Title="Main">
+
+    <Grid>
+        <Image HorizontalAlignment="Left" Height="407" VerticalAlignment="Top" Width="402">
+            <Image.Source>
+                <FormatConvertedBitmap Source="/Перминов.jpg"
+                DestinationFormat="Gray32Float" />
+            </Image.Source>
+         </Image>
+        <Label Content="Добро пожаловать в автосалон SperminovAvto" HorizontalAlignment="Left" Margin="477,102,0,0" VerticalAlignment="Top" Width="296"/>
+
+    </Grid>
+</Page>

@@ -10,16 +10,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace WpfAppPr12.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для Zayavka.xaml
+    /// Логика взаимодействия для Order.xaml
     /// </summary>
-    public partial class Zayavka : Window
+    public partial class Order : Page
     {
-        public Zayavka()
+        public Order()
         {
             InitializeComponent();
         }
