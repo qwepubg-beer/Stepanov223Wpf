@@ -10,5 +10,25 @@
 
     <Grid>
         
+        <StackPanel Margin="370,0,15,0">
+            <Label Content="Введите первоначальный взнос"/>
+            <TextBox TextWrapping="Wrap" Text="" Width="393"/>
+            <Label Content="Введите годовую ставку "/>
+            <TextBox TextWrapping="Wrap" Text="" Width="393"/>
+            <Label Content="Введите срок в месяцах "/>
+            <TextBox TextWrapping="Wrap" Text="" Width="393"/>
+            <TextBox TextWrapping="Wrap" Text="" Width="393"/>
+            <Label Content="Ваш ежемесячный платеж: "/>
+            <TextBox TextWrapping="Wrap" Text="" Width="393"/>
+            <Label Content="Ваша месячная процентная ставка: "/>
+            <TextBox TextWrapping="Wrap" Text="" Width="393"/>
+        </StackPanel>
+        <Image HorizontalAlignment="Left" Height="367" VerticalAlignment="Top" Width="350" Margin="5,30,0,0">
+            <Image.Source>
+                <FormatConvertedBitmap Source="/Перминов.jpg"
+DestinationFormat="Gray32Float" />
+            </Image.Source>
+        </Image>
+
     </Grid>
 </Page>
