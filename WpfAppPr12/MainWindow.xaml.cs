@@ -20,9 +20,12 @@ namespace WpfAppPr12
     
     public partial class MainWindow : Window
     {
+        List<Page> pages=new List<Page> {new Main(), new Model(),new Color1(), new End(), new Order(), new Result() };
+        int i = 0;
         public MainWindow()
         {
             InitializeComponent();
+            
             MainFrame.NavigationService.Navigate(new Main());
         }
 
@@ -40,33 +43,26 @@ namespace WpfAppPr12
         {
             if (MainFrame.NavigationService?.CanGoBack == true)
             {
+                i -= 1;
                 MainFrame.NavigationService.GoBack();
+            }
+            else 
+            {
+                MainFrame.NavigationService.Navigate(pages[i]);
             }
         }
 
         private void ModelWindow_Click(object sender, RoutedEventArgs e)
         {
-            MainFrame.NavigationService.Navigate(new Model());
-        }
-
-        private void ColorWindow_Click(object sender, RoutedEventArgs e)
-        {
-            MainFrame.NavigationService.Navigate(new Color1());
-        }
-
-        private void EndWindow_Click(object sender, RoutedEventArgs e)
-        {
-            MainFrame.NavigationService.Navigate(new End());
-        }
-
-        private void CreditWindow_Click(object sender, RoutedEventArgs e)
-        {
-            MainFrame.NavigationService.Navigate(new Order());
-        }
-
-        private void ZayavkaWindow_Click(object sender, RoutedEventArgs e)
-        {
-            MainFrame.NavigationService.Navigate(new Result());
+            if (MainFrame.NavigationService?.CanGoForward == true)
+            {
+                i += 1;
+                MainFrame.NavigationService.Navigate(pages[i]);
+            }
+            else 
+            {
+                MainFrame.NavigationService.Navigate(pages[i]);
+            }
         }
     }
     

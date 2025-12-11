@@ -17,10 +17,12 @@
             <TextBox TextWrapping="Wrap" Text="" Width="393"/>
             <Label Content="Введите срок в месяцах "/>
             <TextBox TextWrapping="Wrap" Text="" Width="393"/>
+            <Button Content="Вычислить"/>
             <Label Content="Ваш ежемесячный платеж: "/>
             <TextBox TextWrapping="Wrap" Text="" Width="393"/>
             <Label Content="Ваша месячная процентная ставка: "/>
             <TextBox TextWrapping="Wrap" Text="" Width="393"/>
+            
         </StackPanel>
         <Image HorizontalAlignment="Left" Height="367" VerticalAlignment="Top" Width="350" Margin="5,30,0,0">
             <Image.Source>

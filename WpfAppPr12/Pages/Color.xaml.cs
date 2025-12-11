@@ -29,7 +29,6 @@ namespace WpfAppPr12.Pages
         public Color1()
         {
             InitializeComponent();
-            List<Options> options = new List<Options> { O1, O2, O3, O4 };
             ColorComboBox.ItemsSource = Colors;
             ColorComboBox.SelectedIndex = 1;
         }

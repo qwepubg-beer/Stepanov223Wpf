@@ -10,9 +10,9 @@
 
     <Grid>
         <StackPanel Orientation="Vertical" Margin="84,153,590,184" >
-            <RadioButton GroupName="Group1" Content="Электромобиль" IsChecked="True" Checked="RadioButton_Checked" />
-            <RadioButton GroupName="Group1" Content="Дизель"/>
-            <RadioButton GroupName="Group1" Content="Бензин"/>
+            <RadioButton Name="E" GroupName="Group1" Content="Электромобиль" Checked="RadioButton_Checked" />
+            <RadioButton Name="D" GroupName="Group1" Content="Дизель"/>
+            <RadioButton Name="B" GroupName="Group1" Content="Бензин"/>
 
         </StackPanel>
         <Label Content="Выбирите тип двигателя автомобиля" HorizontalAlignment="Left" Margin="51,122,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.275,0.016"/>
