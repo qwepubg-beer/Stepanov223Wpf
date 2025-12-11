@@ -9,14 +9,13 @@
       Title="Order">
 
     <Grid>
-        
+
         <StackPanel Margin="370,0,15,0">
             <Label Content="Введите первоначальный взнос"/>
             <TextBox TextWrapping="Wrap" Text="" Width="393"/>
             <Label Content="Введите годовую ставку "/>
             <TextBox TextWrapping="Wrap" Text="" Width="393"/>
             <Label Content="Введите срок в месяцах "/>
-            <TextBox TextWrapping="Wrap" Text="" Width="393"/>
             <TextBox TextWrapping="Wrap" Text="" Width="393"/>
             <Label Content="Ваш ежемесячный платеж: "/>
             <TextBox TextWrapping="Wrap" Text="" Width="393"/>

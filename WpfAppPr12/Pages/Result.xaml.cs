@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,9 +21,12 @@ namespace WpfAppPr12.Pages
     /// </summary>
     public partial class Result : Page
     {
+        static public List<string> Colors = new List<string> { "Наличными", "Картой", "Наличными и картой", };
         public Result()
         {
             InitializeComponent();
+            PayType.ItemsSource = Colors;
+            PayType.SelectedIndex = 1;
         }
     }
 }

@@ -56,17 +56,17 @@ namespace WpfAppPr12
 
         private void EndWindow_Click(object sender, RoutedEventArgs e)
         {
-            MainFrame.NavigationService.Navigate(new Result());
+            MainFrame.NavigationService.Navigate(new End());
         }
 
         private void CreditWindow_Click(object sender, RoutedEventArgs e)
         {
-            MainFrame.NavigationService.Navigate(new Credit());
+            MainFrame.NavigationService.Navigate(new Order());
         }
 
         private void ZayavkaWindow_Click(object sender, RoutedEventArgs e)
         {
-            MainFrame.NavigationService.Navigate(new Order());
+            MainFrame.NavigationService.Navigate(new Result());
         }
     }
     

@@ -9,6 +9,25 @@
       Title="Result">
 
     <Grid>
-        
+        <StackPanel Margin="370,0,20,0">
+            <Label Content="Введите фамилию"/>
+            <TextBox TextWrapping="Wrap" Text="" Width="393"/>
+            <Label Content="Введите имя "/>
+            <TextBox TextWrapping="Wrap" Text="" Width="393"/>
+            <Label Content="Введите отчество "/>
+            <TextBox TextWrapping="Wrap" Text="" Width="393"/>
+            <Label Content="Введите почту "/>
+            <TextBox TextWrapping="Wrap" Text="" Width="393"/>
+            <Label Content="Ваш способ оплаты"/>
+            <ComboBox x:Name="PayType" Width="415"/>
+            <Button Content="Отправить заявку"/>
+
+        </StackPanel>
+        <Image HorizontalAlignment="Left" Height="367" VerticalAlignment="Top" Width="350" Margin="5,30,0,0">
+            <Image.Source>
+                <FormatConvertedBitmap Source="/Перминов.jpg"
+DestinationFormat="Gray32Float" />
+            </Image.Source>
+        </Image>
     </Grid>
 </Page>

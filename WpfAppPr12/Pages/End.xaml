@@ -5,14 +5,14 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:WpfAppPr12.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      d:DesignHeight="420" d:DesignWidth="800"
       Title="End">
 
     <Grid>
         <Label Content="Ваша скидка" HorizontalAlignment="Left" Margin="550,94,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.556,0"/>
-        <TextBox HorizontalAlignment="Left" Margin="540,367,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Финальная стоимость" HorizontalAlignment="Left" Margin="530,329,0,0" VerticalAlignment="Top"/>
-        <Image HorizontalAlignment="Left" Height="417" VerticalAlignment="Top" Width="415" Margin="20,19,0,0">
+        <TextBox HorizontalAlignment="Left" Margin="535,237,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Финальная стоимость" HorizontalAlignment="Left" Margin="530,190,0,0" VerticalAlignment="Top"/>
+        <Image HorizontalAlignment="Left" Height="392" VerticalAlignment="Center" Width="415" Margin="19,0,0,0">
             <Image.Source>
                 <FormatConvertedBitmap Source="/Перминов.jpg"
         DestinationFormat="Gray32Float" />
