@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using WpfAppPr12.Pages;
-using static WpfAppPr12.OurCar;
+using static WpfAppPr12.Value;
 
 namespace WpfAppPr12
 {
@@ -21,11 +21,10 @@ namespace WpfAppPr12
     public partial class MainWindow : Window
     {
         List<Page> pages=new List<Page> {new Main(), new Model(),new Color1(), new End(), new Order(), new Result() };
-        int i = 0;
+        
         public MainWindow()
         {
             InitializeComponent();
-            
             MainFrame.NavigationService.Navigate(new Main());
         }
 
@@ -43,12 +42,12 @@ namespace WpfAppPr12
         {
             if (MainFrame.NavigationService?.CanGoBack == true)
             {
-                i -= 1;
+                Value.T -= 1;
                 MainFrame.NavigationService.GoBack();
             }
             else 
             {
-                MainFrame.NavigationService.Navigate(pages[i]);
+                MainFrame.NavigationService.Navigate(pages[Value.T]);
             }
         }
 
@@ -56,12 +55,12 @@ namespace WpfAppPr12
         {
             if (MainFrame.NavigationService?.CanGoForward == true)
             {
-                i += 1;
-                MainFrame.NavigationService.Navigate(pages[i]);
+                Value.T += 1;
+                MainFrame.NavigationService.Navigate(pages[Value.T]);
             }
             else 
             {
-                MainFrame.NavigationService.Navigate(pages[i]);
+                MainFrame.NavigationService.Navigate(pages[Value.T]);
             }
         }
     }

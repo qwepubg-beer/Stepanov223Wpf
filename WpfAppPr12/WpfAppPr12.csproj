@@ -118,6 +118,7 @@
     <Compile Include="Pages\Order.xaml.cs">
       <DependentUpon>Order.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Value.cs" />
     <Compile Include="Pages\Result.xaml.cs">
       <DependentUpon>Result.xaml</DependentUpon>
     </Compile>

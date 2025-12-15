@@ -14,11 +14,11 @@
         <Label Content="Выберите цвет для автомобиля" HorizontalAlignment="Left" Margin="102,110,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.275,0.016"/>
         <ComboBox x:Name="ColorComboBox"  HorizontalAlignment="Left" Margin="125,157,0,0" VerticalAlignment="Top" Width="161" Height="45"/>
         <StackPanel Margin="503,141,109,121">
-            <CheckBox Content="Подогрев жопы"/>
-            <CheckBox Content="Видиорегистратор"/>
-            <CheckBox Content="Магнитола"/>
-            <CheckBox Content="Багажник на крышу"/>
-            <CheckBox Content="Автограф Перминова"/>
+            <CheckBox Name="Jp" Content="Подогрев жопы"/>
+            <CheckBox Name="Vr" Content="Видиорегистратор"/>
+            <CheckBox Name="Mg" Content="Магнитола"/>
+            <CheckBox Name="BK" Content="Багажник на крышу"/>
+            <CheckBox Name="AP" Content="Автограф Перминова"/>
         </StackPanel>
     </Grid>
 </Page>

@@ -39,7 +39,6 @@ namespace WpfAppPr12.Pages
                 default: E.IsChecked = true; break;
             }
             List<string> carsE = new List<string> { car1.CarName, car2.CarName, car7.CarName, car8.CarName, car4.CarName, car5.CarName, car6.CarName };
-            //CarsComboBox.SelectedIndex = ;
             CarsComboBox.ItemsSource = carsE;
             CarsComboBox.SelectedIndex = 1;
         }
@@ -60,6 +59,34 @@ namespace WpfAppPr12.Pages
                 case "Бензин":
                     OurCar.TypeCar = 'B';
                     
+                    break;
+            }
+        }
+
+        private void CarsComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            switch (CarsComboBox.SelectedItem)
+            {
+                case "Tesla Model Y":
+                    OurCar.Car = car1;
+                    break;
+                case "Tesla Model 3":
+                    OurCar.Car = car2;
+                    break;
+                case "Toyota RAV4":
+                    OurCar.Car = car4;
+                    break;
+                case "Toyota Hilux":
+                    OurCar.Car = car5;
+                    break;
+                case "Ram 1500 EcoDiesel":
+                    OurCar.Car = car6;
+                    break;
+                case "Ford F - Series Super Duty":
+                    OurCar.Car = car7;
+                    break;
+                case "Ford F - Series":
+                    OurCar.Car = car8;
                     break;
             }
         }

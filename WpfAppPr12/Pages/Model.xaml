@@ -16,7 +16,7 @@
 
         </StackPanel>
         <Label Content="Выбирите тип двигателя автомобиля" HorizontalAlignment="Left" Margin="51,122,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.275,0.016"/>
-        <ComboBox x:Name="CarsComboBox"  HorizontalAlignment="Left" Margin="308,157,0,0" VerticalAlignment="Top" Width="161" Height="45"/>
+        <ComboBox x:Name="CarsComboBox"  HorizontalAlignment="Left" Margin="308,157,0,0" VerticalAlignment="Top" Width="161" Height="45" SelectionChanged="CarsComboBox_SelectionChanged"/>
         <Label Content="Выберите  машину" HorizontalAlignment="Left" Margin="331,122,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.275,0.016"/>
     </Grid>
 </Page>

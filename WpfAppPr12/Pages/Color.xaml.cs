@@ -26,11 +26,22 @@ namespace WpfAppPr12.Pages
         static Options O2 = new Options("Видиорегистратор", 15000);
         static Options O3 = new Options("Магнитола", 20000);
         static Options O4 = new Options("Багажник на крышу", 20000);
+        static Options O5 = new Options("Подпись Перминова", 100000);
         public Color1()
         {
             InitializeComponent();
             ColorComboBox.ItemsSource = Colors;
             ColorComboBox.SelectedIndex = 1;
+        }
+        public double CountCost()
+        {
+            double count = 0;
+            if (Jp.IsChecked == true) count += O1.price;
+            if (Vr.IsChecked == true) count += O2.price;
+            if (Mg.IsChecked == true) count += O3.price;
+            if (BK.IsChecked == true) count += O4.price;
+            if (AP.IsChecked == true) count += O5.price;
+            return count;
         }
     }
 }
