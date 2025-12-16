@@ -28,5 +28,16 @@ namespace WpfAppPr12.Pages
             PayType.ItemsSource = Colors;
             PayType.SelectedIndex = 1;
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            bool G = Name.Text.Length > 0 && Oname.Text.Length > 0 && LastName.Text.Length > 0;
+            if (!G) MessageBox.Show("Введите ФИО");
+            else if (!Email.Text.Contains('@')) MessageBox.Show("Введите почту");
+            else
+            {
+                MessageBox.Show("Спасибо за заказ!");
+            }
+        }
     }
 }

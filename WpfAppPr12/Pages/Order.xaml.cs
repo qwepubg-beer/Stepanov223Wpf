@@ -41,17 +41,24 @@ namespace WpfAppPr12.Pages
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             int P;
-            if (!int.TryParse(Vznos.Text, out P)) { MessageBox.Show("Введите правильный первоначальный взнос"); }
+            if (int.TryParse(Vznos.Text, out P)) { }
+                else
+            { MessageBox.Show("Введите правильный первоначальный взнос"); }
             int r;
-            if (!int.TryParse(Stavka.Text, out r)) { MessageBox.Show("Введите правильную годовая ставка"); }
+            if (int.TryParse(Stavka.Text, out r)) 
+            { }
+                else
+            { MessageBox.Show("Введите правильную годовая ставка"); }
             int n;
-            if ((!int.TryParse(Srok.Text, out n) || n<12)){ MessageBox.Show("Введите правильный срок в месяцах"); }
-            var C = OurCar.Car.Price + OurCar.PriceColor + OurCar.PriceOptions;
-            var S = C - P;
+            if ((int.TryParse(Srok.Text, out n) || n<12)){ }
+            else
+            { MessageBox.Show("Введите правильный срок в месяцах"); }
+            double C = OurCar.Car.Price + OurCar.PriceColor + OurCar.PriceOptions;
+            double S = C - P;
             double i = r / 100 / 12;
             double A = S * (i * Math.Pow((1 + i), n)) / (Math.Pow((1 + i), n) - 1);
-            mes.Text = $"{A}";
-            procent.Text = $"{i}";
+            mes.Text = A.ToString();
+            procent.Text = i.ToString();
         }
     }
 }

@@ -11,22 +11,21 @@
     <Grid>
         <StackPanel Margin="370,0,20,0">
             <Label Content="Введите фамилию"/>
-            <TextBox TextWrapping="Wrap" Text="" Width="393"/>
+            <TextBox Name="LastName" TextWrapping="Wrap" Text="" Width="393"/>
             <Label Content="Введите имя "/>
-            <TextBox TextWrapping="Wrap" Text="" Width="393"/>
+            <TextBox Name="Name" TextWrapping="Wrap" Text="" Width="393"/>
             <Label Content="Введите отчество "/>
-            <TextBox TextWrapping="Wrap" Text="" Width="393"/>
+            <TextBox Name="Oname" TextWrapping="Wrap" Text="" Width="393"/>
             <Label Content="Введите почту "/>
-            <TextBox TextWrapping="Wrap" Text="" Width="393"/>
+            <TextBox Name="Email" TextWrapping="Wrap" Text="" Width="393"/>
             <Label Content="Ваш способ оплаты"/>
-            <ComboBox x:Name="PayType" Width="375"/>
-            <Button Content="Отправить заявку"/>
+            <ComboBox  x:Name="PayType" Width="375"/>
+            <Button Content="Отправить заявку" Click="Button_Click"/>
 
         </StackPanel>
         <Image HorizontalAlignment="Left" Height="367" VerticalAlignment="Top" Width="350" Margin="0,30,0,0">
             <Image.Source>
-                <FormatConvertedBitmap Source="/Перминов.jpg"
-DestinationFormat="Gray32Float" />
+                <FormatConvertedBitmap Source="/Перминов.jpg"/>
             </Image.Source>
         </Image>
     </Grid>
