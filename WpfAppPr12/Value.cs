@@ -8,6 +8,6 @@ namespace WpfAppPr12
 {
     internal static class Value
     {
-        public static  int T { get; set; } = 1;
+        public static  int T { get; set; } = 0;
     }
 }

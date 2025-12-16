@@ -43,6 +43,11 @@ namespace WpfAppPr12.Pages
             if (AP.IsChecked == true) count += O5.price;
             return count;
         }
+
+        private void ColorComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            OurCar.PriceColor += 10000;
+        }
     }
 }
 

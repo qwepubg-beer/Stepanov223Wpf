@@ -39,10 +39,12 @@ namespace WpfAppPr12
         }
 
         private void GoBack1_Click(object sender, RoutedEventArgs e)
-        {
+        {    
+            if(Value.T!=0)
+                Value.T --;
             if (MainFrame.NavigationService?.CanGoBack == true)
             {
-                Value.T -= 1;
+                
                 MainFrame.NavigationService.GoBack();
             }
             else 
@@ -53,9 +55,10 @@ namespace WpfAppPr12
 
         private void ModelWindow_Click(object sender, RoutedEventArgs e)
         {
+            if (Value.T < 5) Value.T ++;
             if (MainFrame.NavigationService?.CanGoForward == true)
             {
-                Value.T += 1;
+                
                 MainFrame.NavigationService.Navigate(pages[Value.T]);
             }
             else 

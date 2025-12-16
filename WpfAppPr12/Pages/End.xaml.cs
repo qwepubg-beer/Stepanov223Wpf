@@ -20,12 +20,17 @@ namespace WpfAppPr12.Pages
     /// </summary>
     public partial class End : Page
     {
-        static public List<int> Colors = new List<int> { 1, 5, 9, 11 };
+       
         public End()
         {
             InitializeComponent();
-            Skidka.ItemsSource = Colors;
-            Skidka.SelectedIndex = 1;
+           
+        }
+
+         private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Ах ты бедный еврей, не будет скидки!");
+            Final.Text = $"{OurCar.Car.Price + OurCar.PriceColor + OurCar.PriceOptions} рублей";
         }
     }
 }

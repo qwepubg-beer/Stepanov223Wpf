@@ -35,6 +35,23 @@ namespace WpfAppPr12.Pages
             i=r/12 ​// если r целое число, то i=r/100/12
             A = S*(i*(1+i)^n)/(1+i)^n - 1
             */
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            int P;
+            if (!int.TryParse(Vznos.Text, out P)) { MessageBox.Show("Введите правильный первоначальный взнос"); }
+            int r;
+            if (!int.TryParse(Stavka.Text, out r)) { MessageBox.Show("Введите правильную годовая ставка"); }
+            int n;
+            if ((!int.TryParse(Srok.Text, out n) || n<12)){ MessageBox.Show("Введите правильный срок в месяцах"); }
+            var C = OurCar.Car.Price + OurCar.PriceColor + OurCar.PriceOptions;
+            var S = C - P;
+            double i = r / 100 / 12;
+            double A = S * (i * Math.Pow((1 + i), n)) / (Math.Pow((1 + i), n) - 1);
+            mes.Text = $"{A}";
+            procent.Text = $"{i}";
         }
     }
 }

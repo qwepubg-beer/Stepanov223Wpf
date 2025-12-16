@@ -12,16 +12,16 @@
 
         <StackPanel Margin="370,0,15,0">
             <Label Content="Введите первоначальный взнос"/>
-            <TextBox TextWrapping="Wrap" Text="" Width="393"/>
+            <TextBox Name="Vznos" TextWrapping="Wrap" Text="" Width="393"/>
             <Label Content="Введите годовую ставку "/>
-            <TextBox TextWrapping="Wrap" Text="" Width="393"/>
+            <TextBox Name="Stavka" TextWrapping="Wrap" Text="" Width="393"/>
             <Label Content="Введите срок в месяцах "/>
-            <TextBox TextWrapping="Wrap" Text="" Width="393"/>
-            <Button Content="Вычислить"/>
+            <TextBox Name="Srok" TextWrapping="Wrap" Text="" Width="393"/>
+            <Button Content="Вычислить" Click="Button_Click"/>
             <Label Content="Ваш ежемесячный платеж: "/>
-            <TextBox TextWrapping="Wrap" Text="" Width="393"/>
-            <Label Content="Ваша месячная процентная ставка: "/>
-            <TextBox TextWrapping="Wrap" Text="" Width="393"/>
+            <TextBox Name="mes" TextWrapping="Wrap" Text="" Width="393"/>
+            <Label  Content="Ваша месячная процентная ставка: "/>
+            <TextBox Name="procent" TextWrapping="Wrap" Text="" Width="393"/>
             
         </StackPanel>
         <Image HorizontalAlignment="Left" Height="367" VerticalAlignment="Top" Width="350" Margin="5,30,0,0">
