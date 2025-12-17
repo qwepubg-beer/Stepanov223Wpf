@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -41,7 +42,7 @@ namespace WpfAppPr12.Pages
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             int P;
-            if (int.TryParse(Vznos.Text, out P)) { }
+            if (int.TryParse(Vznos.Text, out P)) {  }
                 else
             { MessageBox.Show("Введите правильный первоначальный взнос"); }
             int r;
@@ -52,13 +53,21 @@ namespace WpfAppPr12.Pages
             int n;
             if ((int.TryParse(Srok.Text, out n) || n<12)){ }
             else
-            { MessageBox.Show("Введите правильный срок в месяцах"); }
+                MessageBox.Show("Введите правильный срок в месяцах");
+
+            double i = Convert.ToDouble(r) / 1200.0;
+            double f = credit(P, r, n);
+            mes.Text = f.ToString();
+            procent.Text = i.ToString();
+        }
+        public double credit(int P, int r, int n)
+        {
             double C = OurCar.Car.Price + OurCar.PriceColor + OurCar.PriceOptions;
             double S = C - P;
-            double i = r / 100 / 12;
-            double A = S * (i * Math.Pow((1 + i), n)) / (Math.Pow((1 + i), n) - 1);
-            mes.Text = A.ToString();
-            procent.Text = i.ToString();
+            double i = Convert.ToDouble(r) / 1200.0;
+            double A = Math.Round(S * (i * Math.Pow((1 + i), n)) / (Math.Pow((1 + i), n) - 1),2);
+            return A;
         }
     }
 }
+

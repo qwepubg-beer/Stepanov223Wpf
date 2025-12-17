@@ -55,6 +55,7 @@ namespace WpfAppPr12
 
         private void ModelWindow_Click(object sender, RoutedEventArgs e)
         {
+           
             if (Value.T < 5) Value.T ++;
             if (MainFrame.NavigationService?.CanGoForward == true)
             {
@@ -66,6 +67,19 @@ namespace WpfAppPr12
                 MainFrame.NavigationService.Navigate(pages[Value.T]);
             }
         }
+        private void OnNavigating(object sender, NavigatingCancelEventArgs e)
+        {
+            if (Value.T>0)
+            {
+                var result = MessageBox.Show("Есть несохранённые изменения. Покинуть страницу?", "Подтверждение",
+                  MessageBoxButton.YesNo);
+                if (result == MessageBoxResult.No)
+                {
+                    e.Cancel = true;
+                }
+             }
+            }
+        }
     }
     
-}
+
